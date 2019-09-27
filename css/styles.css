@@ -676,6 +676,13 @@ footer .innerSection {
 	border: 1px solid orange;
 	border-radius: 20px;
 }
+/* ROWS */
+/* resultsRows */
+.resultsRows {
+
+}
+/* firstResultsRow */
+
 /* HAMBURGER MENU */
 #toggleHamburgerItems {
 	width: 1120px;
