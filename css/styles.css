@@ -1,58 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
 /* TEMPLATE FILE
-/* 
+/*
 This is a template file.
 
 How to use:
 1 - Copy / paste into your project.
-2 - rename to styles.css .
-When you are 
+2 - rename to styles.css.
 3 - style as much of the site /page as you can with any of the tags built-in to html5 first.
 4 - style the two custom elements (innerSection & .absoluteContainer).
 5 - add and style case-specific elements e.g class="portfolioText", class="aboutMeImg" etc
 
 Note: Once you are happy that you have control of all the elements you need, run this entire page through the w3 css validator and it will remove all empty elements and comments.
 
-Tip: user border:1px solid red; to mark out the nearest outer container to what you are styling to highlight it on the fron end.
-
-SPEC: 
-Currently styled elements: 
-	* {box-sizing: border-box;} 
-	// part one of the not-using-floats hack (part two being overflow:auto in any given div)
-	section {width: 1200px; margin: 0 auto;} 
-	// fixes width of the page to 1200px & centralises it.
-	body {background-color: #333333; color: #ffffff; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; font-size : 16px;} 
-	// sets the default background and foreground text colors default text size and font.
-	p {font-size : 1em;} 
-	// sets the default content text size as a 1-1 ratio of the font-size element in the body tag.
-	a {font-size : 1em;} 
-	// sets the default link text size as a 1-1 ratio of the font-size element in the body tag.
-	h1, h2, h3, h4, h5, h6 {font-weight : bold;}
-	// makes all headings bold
-	h1 {font-size : 2em;} 
-	// sets the default link text size as a 2-1 ratio of the font-size element in the body tag.
-	h2 {font-size : 1.8em;} 
-	// sets the default link text size as a 1.8-1 ratio of the font-size element in the body tag.
-	h3 {font-size : 1.6em;} 
-	// sets the default link text size as a 1-6 ratio of the font-size element in the body tag.
-	h4 {font-size : 1.4em;} 
-	// sets the default link text size as a 1.4-1 ratio of the font-size element in the body tag.
-	h5 {font-size : 1.2em;} 
-	// sets the default link text size as a 1.2-1 ratio of the font-size element in the body tag.
-	h6 {font-size : 1em;} 
-	// sets the default link text size as a 1-1 ratio of the font-size element in the body tag.
-	a {text-decoration : none;}
-	// sets the default link text size as a 1-1 ratio of the font-size element in the body tag.
-	section {width : 1200px; margin : 0 auto;}
-	// sets the page width and puts it in the middle of the browser wiindow
-
-Custom elements:
-	.innerSection {} // gives control of the bit between the section and text tags <h1>, <p> etc.
-	.absoluteContainer {position: relative;} // adds a conainer for anything positioned absolutely to exist in.
+Tip: user border:1px solid red; to mark out the nearest outer container to what you are styling to highlight it on the front end.
 
 */
-/* DO NOT EDIT THIS  FILE... TAKE A COPY AND USE THAT INSTED */
+/* DO NOT EDIT THIS  FILE... TAKE A COPY AND USE THAT INSTEAD */
 * {
 	box-sizing: border-box;
 }
