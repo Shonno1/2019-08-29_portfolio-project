@@ -1,778 +1,559 @@
 @charset "utf-8";
 /* CSS Document */
-/* TEMPLATE FILE
-/* 
-This is a template file.
-
-How to use:
-1 - Copy / paste into your project.
-2 - rename to styles.css .
-When you are 
-3 - style as much of the site /page as you can with any of the tags built-in to html5 first.
-4 - style the two custom elements (innerSection & .absoluteContainer).
-5 - add and style case-specific elements e.g class="portfolioText", class="aboutMeImg" etc
-
-Note: Once you are happy that you have control of all the elements you need, run this entire page through the w3 css validator and it will remove all empty elements and comments.
-
-Tip: user border:1px solid red; to mark out the nearest outer container to what you are styling to highlight it on the fron end.
-
-SPEC: 
-Currently styled elements: 
-	* {box-sizing: border-box;} 
-	// part one of the not-using-floats hack (part two being overflow:auto in any given div)
-	section {width: 1200px; margin: 0 auto;} 
-	// fixes width of the page to 1200px & centralises it.
-	body {background-color: #333333; color: #ffffff; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; font-size : 16px;} 
-	// sets the default background and foreground text colors default text size and font.
-	p {font-size : 1em;} 
-	// sets the default content text size as a 1-1 ratio of the font-size element in the body tag.
-	a {font-size : 1em;} 
-	// sets the default link text size as a 1-1 ratio of the font-size element in the body tag.
-	h1, h2, h3, h4, h5, h6 {font-weight : bold;}
-	// makes all headings bold
-	h1 {font-size : 2em;} 
-	// sets the default link text size as a 2-1 ratio of the font-size element in the body tag.
-	h2 {font-size : 1.8em;} 
-	// sets the default link text size as a 1.8-1 ratio of the font-size element in the body tag.
-	h3 {font-size : 1.6em;} 
-	// sets the default link text size as a 1-6 ratio of the font-size element in the body tag.
-	h4 {font-size : 1.4em;} 
-	// sets the default link text size as a 1.4-1 ratio of the font-size element in the body tag.
-	h5 {font-size : 1.2em;} 
-	// sets the default link text size as a 1.2-1 ratio of the font-size element in the body tag.
-	h6 {font-size : 1em;} 
-	// sets the default link text size as a 1-1 ratio of the font-size element in the body tag.
-	a {text-decoration : none;}
-	// sets the default link text size as a 1-1 ratio of the font-size element in the body tag.
-	section {width : 1200px; margin : 0 auto;}
-	// sets the page width and puts it in the middle of the browser wiindow
-
-Custom elements:
-	.innerSection {} // gives control of the bit between the section and text tags <h1>, <p> etc.
-	.absoluteContainer {position: relative;} // adds a conainer for anything positioned absolutely to exist in.
-
-*/
-/* DO NOT EDIT THIS  FILE... TAKE A COPY AND USE THAT INSTED */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
-.clear {clear:both;}
+
 /* BASIC HTML */
 html {
-	background-color: black;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 16px;
-	overflow: auto;
+    background-color: black;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 16px;
+    overflow: auto;
 }
+
 body {
-	color: red;
+    color: red;
 }
+
 p, a, h1, h2, h3, h4, h5, h6 {
-	font-size: 1em;
-	color: white;
-	padding: 11px;
+    font-size: 1em;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
 }
+
 h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
+    font-weight: bold;
 }
+
 h1 {
-	font-size: 2em;
+    font-size: 2em;
+    border-bottom: 1px solid orange;
 }
+
 h2 {
-	font-size: 1.8em;
+    font-size: 1.8em;
 }
+
 h3 {
-	font-size: 1.6em;
+    font-size: 1.6em;
 }
+
 h4 {
-	font-size: 1.4em;
+    font-size: 1.4em;
 }
+
 h5 {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
+
 h6 {
-	font-size: 1em;
+    font-size: 1em;
 }
+
 p {
-	font-size: 1em;
+    font-size: 1em;
+    padding-bottom: 10px;
+    padding-right: 14px;
 }
+
 a {
-	text-decoration: none;
+    text-decoration: underline;
 }
+
 small {
-	font-size: 0.7em;
-	color:#666;
-	}
+    font-size: 0.7em;
+    color: #666;
+}
+
 hr {
-	color: white;
-	width: 60%
-}
-	
-/* TEXT FORMATTING */
-/* frequently used */
-abbr {
-	/* Defines an abbreviation or an acronym */
-	
-}
-address	{
-	/*Defines contact information for the author/owner of a document/article */
-	
-}
-b {
-	/* Defines bold text */
-	
-}
-blockquote {
-	/* Defines a section that is quoted from another source */
-	
-}
-cite {
-	/* Defines the title of a work */
-	
-}
-em {
-	/*Defines emphasized text */
-	
-}
-i {
-	/* Defines a part of text in an alternate voice or mood */
-	
-}
-mark {
-	/* Defines marked/highlighted text */
-	
-}
-meter {
-	/* Defines a scalar measurement within a known range (a gauge) */
-	
-}
-pre {
-	/* Defines preformatted text */
-	
-}
-progress {
-	/* Represents the progress of a task */
-	
-}
-q {
-	/* Defines a short quotation */
-	
-}
-strong {
-	/* Defines important text */
-	
-}
-wbr {
-	/* Defines a possible line-break */
-	
+    color: white;
+    width: 60%
 }
 
-/* all formatting styles */
-abbr {
-	/* Defines an abbreviation or an acronym */
-	
-}
-address	{
-	/*Defines contact information for the author/owner of a document/article */
-	
-}
-b {
-	/* Defines bold text */
-	
-}
-bdi {
-	/*Isolates a part of text that might be formatted in a different direction from other text outside it */
-	
-}
-bdo {
-	/*Overrides the current text direction */
-	
-}
-blockquote {
-	/* Defines a section that is quoted from another source */
-	
-}
-cite {
-	/* Defines the title of a work */
-	
-}
-code {
-	/* Defines a piece of computer code */
-	
-}
-del {
-	/* Defines text that has been deleted from a document */
-	
-}
-dfn {
-	/* Represents the defining instance of a term */
-	
-}
-em {
-	/*Defines emphasized text */
-	
-}
-i {
-	/* Defines a part of text in an alternate voice or mood */
-	
-}
-ins {
-	/* Defines a text that has been inserted into a document */
-	
-}
-kbd {
-	/* Defines keyboard input */
-	
-}
-mark {
-	/* Defines marked/highlighted text */
-	
-}
-meter {
-	/* Defines a scalar measurement within a known range (a gauge) */
-	
-}
-pre {
-	/* Defines preformatted text */
-	
-}
-progress {
-	/* Represents the progress of a task */
-	
-}
-q 
-{
-	/* Defines a short quotation */
-	
-}
-rt {
-	/* Defines an explanation/pronunciation of characters (for East Asian typography) */
-	
-}
-ruby {
-	/* Defines a ruby annotation (for East Asian typography) */
-	
-}
-s {
-	/* Defines text that is no longer correct */
-	
-}
-samp {
-	/* Defines sample output from a computer program */
-	
-}
-small {
-	/*Defines smaller text */
-	
-}
-strong {
-	/* Defines important text */
-	
-}
-sub {
-	/* Defines subscripted text */
-	
-}
-sup {
-	/* Defines superscripted text */
-	
-}
-template {
-	/* Defines a template */
-	
-}
-time {
-	/* Defines a date/time */
-	
-}
-u {
-	/* Defines text that should be stylistically different from normal text */
-	
-}
-var {
-	/* Defines a variable */
-	
-}
-wbr {
-	/* Defines a possible line-break */
-	
-}
-
-/* FORMS */
-form 
-{
-	/* Defines an HTML form for user input */
-	
-}
-input 
-{
-	/* Defines an input control */
-	
-}
-textarea 
-{
-	/* Defines a multiline input control (text area) */
-	
-}
-button 
-{
-	/* Defines a clickable button */
-	
-}
-select 
-{
-	/* Defines a drop-down list */
-	
-}
-optgroup 
-{
-	/* Defines a group of related options in a drop-down list */
-	
-}
-option 
-{
-	/* Defines an option in a drop-down list */
-	
-}
-label 
-{
-	/* Defines a label for an input> element */
-	
-}
-fieldset 
-{
-	/* Groups related elements in a form */
-	
-}
-legend 
-{
-	/* Defines a caption for a fieldset> element */
-	
-}
-datalist 
-{
-	/* Specifies a list of pre-defined options for input controls */
-	
-}
-output 
-{
-	/* Defines the result of a calculation */
-	
-}
-
-/* FRAMES */
-iframe {
-	/*Defines an inline frame */
-	
-}
-
-/* IMAGES */
-img {
-	/* Defines an image */
-	
-}
-map {
-	/* Defines a client-side image-map */
-	
-}
-area {
-	/* Defines an area inside an image-map */
-	
-}
-canvas {
-	/* Used to draw graphics, on the fly, via scripting (usually JavaScript) */
-	
-}
-figcaption {
-	/* Defines a caption for a figure> element */
-	
-}
-figure {
-	/* Specifies self-contained content */
-	
-}
-picture {
-	/* Defines a container for multiple image resources */
-	
-}
-svg {
-	/* Defines a container for SVG graphics */
-	
-}
-
-/* AUDIO / VIDEO */
-audio /* Defines sound content */
-{
-	
-}
-source {
-	/* Defines multiple media resources for media elements (video>, audio> and picture>) */
-	
-}
-track {
-	/* Defines text tracks for media elements (video> and audio>) */
-	
-}
-video {
-	/* Defines a video or movie */
-	
-}
-
-/* LINKS */
 a {
-	/* Defines a hyperlink */
-	text-decoration: none;
-	
-}
-nav {
-	/* Defines navigation links */
-	
-}
+    /* Defines a hyperlink */
+    text-decoration: none;
 
-/* LISTS */
-ul {
-	/* Defines an unordered list */
-	
-}
-ol {
-	/* Defines an ordered list */
-	
-}
-li {
-	/* Defines a list item */
-}
-ul {
-	/* Defines a directory list */
-	
-}
-dl {
-	/* Defines a description list */
-	
-}
-dt {
-	/* Defines a term/name in a description list */
-	
-}
-dd {
-	/* Defines a description of a term/name in a description list */
-	
-}
-
-/* TABLES (use columns instead of tables) */
-table {
-	/* Defines a table */
-}
-caption {
-	/* Defines a table caption */
-}
-th {
-	/* Defines a header cell in a table */
-}
-tr {
-	/* Defines a row in a table */
-}
-td {
-	/* Defines a cell in a table */
-}
-thead {
-	/* Groups the header content in a table */
-}
-tbody {
-	/* Groups the body content in a table */
-}
-tfoot {
-	/* Groups the footer content in a table */
-}
-col {
-	/* Specifies column properties for each column within a colgroup element */
-}
-colgroup {
-	/* Specifies a group of one or more columns in a table for formatting */
-}
-
-/* COLUMNS (use columns instead of tables) */
-column-count {
-	/* Specifies the number of columns an element should be divided into */
-	
-}
-column-fill {
-	/* Specifies how to fill columns */
-	
-}
-column-gap {
-	/* Specifies the gap between the columns */
-	
-}
-column-rule {
-	/* A shorthand property for setting all the column-rule-* properties */
-	
-}
-column-rule-color {
-	/* Specifies the color of the rule between columns */
-	
-}
-column-rule-style {
-	/* Specifies the style of the rule between columns */
-	
-}
-column-rule-width {
-	/* Specifies the width of the rule between columns */
-	
-}
-column-span {
-	/* Specifies how many columns an element should span across */
-	
-}
-column-width {
-	/* Specifies a suggested, optimal width for the columns */
-	
-}
-columns {
-	/* A shorthand property for setting column-width and column-count */
-	
 }
 
 /* STYLES AND SEMANTICS */
-/* frequently used */
 section {
-	/* Defines a section in a document */
-	width: 1186px;
-	margin: 0 auto;
-	padding: 15px;
-}
-header {
-	/* Defines a header for a document or section */
-  	height: 810px; /* You must set a specified height */
-  	background-image: url("../images/banner.jpg"); /* The image used */
-  	background-color: #cccccc; /* Used if the image is unavailable */
-  	background-position: center; /* Center the image */
-  	background-repeat: no-repeat; /* Do not repeat the image */
-  	background-size: cover; /* Resize the background image to cover the entire container */
-}
-nav {
-	/* Defines a nav for a document */
-	position: relative;
+    /* Defines a section in a document */
+    width: 1486px;
+    margin: 0 auto;
+    padding: 15px;
+    overflow: auto;
 }
 
-/* HAMBURGER MENU */
+header {
+    /* Defines a header for a document or section */
+    height: 810px; /* You must set a specified height */
+    background-image: url("../images/banner.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+header h1, h2 {
+    text-align: center;
+}
+
+nav {
+    position: relative;
+}
+
+
+main {
+    
+}
+
+footer .innerSection {
+    margin-bottom: 200px;
+}
+
+/* CUSTOM STYLES */
+/* csm badge */
+.csmBadge {
+    padding-top:50px;
+    width: 200px;
+    height: 200px; /* You must set a specified height */
+    /*background-image: url("../images/seal-csm.png"); /* The image used */
+    background-image: url("../images/seal-csm.png"); /* The image used */
+    /*background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    margin:0 auto;
+
+}
+
+/* hamburger menu */
 .hamburgerContainer {
-	position: absolute;
-  	display: inline-block;
-  	cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
+    float: right;
 }
-#toggleHamburger {
+
+.hamburgerMenuLabel {
+    color: white;
 }
+
+.hamburgerContainer li {
+    float: left;
+}
+
 .bar1, .bar2, .bar3 {
-	width: 35px;
-	height: 5px;
-	background-color: orange;
-	margin: 6px 0;
-	transition: 0.4s;
-	border-radius: 20px;
+    width: 35px;
+    height: 5px;
+    background-color: orange;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 20px;
 }
 
 .change .bar1 {
-  	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  	transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+    opacity: 0;
+}
 
 .change .bar3 {
-  	-webkit-transform: rotate(45deg) translate(-8px, -8px);
-  	transform: rotate(45deg) translate(-8px, -8px);
-}
-#toggleHamburgerItems {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 50px;
-	display: none;
-	background-color: grey;
-	border: 1px solid orange;
-}
-main {
-	/* Defines the main content of a document */
-	
-}
-footer {
-	/* Defines a footer for a document or section */
-	height: 200px;
-	padding-bottom: 100px;
-}
-/* all formatting styles */
-style {
-	/* Defines style information for a document */
-	
-}
-div {
-	/* Defines a section in a document */
-	
-}
-span {
-	/* Defines a section in a document */
-	
-}
-header {
-	/* Defines a header for a document or section */
-}
-footer {
-	/* Defines a footer for a document or section */
-	
-}
-main {
-	/* Specifies the main content of a document */
-	
-}
-section {
-	/* Defines a section in a document */
-}
-article {
-	/* Defines an article */
-	
-}
-aside {
-	/* Defines content aside from the page content */
-	
-}
-details {
-	/* Defines additional details that the user can view or hide */
-	
-}
-dialog {
-	/* Defines a dialog box or window */
-	
-}
-summary {
-	/* Defines a visible heading for a details> element */
-	
-}
-data {
-	/* Links the given content with a machine-readable translation */
-	
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* CUSTOM */
-/*  */
+#toggleHamburgerItems {
+    width: 1050px;
+    height: 136px;
+    overflow: -moz-scrollbars-none;
+    margin: 0 auto;
+    padding: 50px;
+    display: none;
+    background-color: black;
+    border-radius: 20px;
+    border: 1px solid orange;
+
+}
+
+#toggleHamburgerItems li {
+    width: 316px;
+    float: left;
+    text-align: center;
+    font-size: 2.0em;
+}
+
+/* centralise things vertically */
+.vCenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* absolute positioning container */
 .absoluteContainer {
-	/* adds a conainer for anything positioned absolutely to exist in. */
-	position: relative;	
-	border: 1px solid blue;
+    border: 1px solid blue;
 }
-.innerSection {
-	/* gives control over the bit between the section and text tags <h1>, <p> etc. */
-	border-bottom: 1px solid orange;
-}
+
 .innerSection h1 {
-	font-size: 1.2em;
+    font-size: 1.2em;
 }
-footer .innerSection {
-	margin-bottom: 200px;
-}
+
 /* columns */
 .columns {
-	width: 269px;
-	margin: 10px;
-	float: left;
-	border: 1px solid orange;
-	border-radius: 20px;
+    width: 269px;
+    margin: 10px;
+    float: left;
+    border: 1px solid orange;
+    border-radius: 20px;
 }
-/* ROWS */
-/* resultsRows */
-.resultsRows {
+
+.columns h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* about */
+.aboutContainer {
+    border: 1px solid grey;
+    overflow: auto;
+}
+
+.aboutTextBox {
+    float: left;
+    width: 800px;
+    padding: 20px;
+}
+
+.aboutMugShotBox {
+    float: right;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid orange;
+    border-radius: 20px;
+
+
+    height: 300px; /* You must set a specified height */
+    background-image: url("../images/mugshotblackandwhite.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
+/* portfolio */
+.portfolioTextContainer {
+    padding-left: 12px;
+    padding-right: 10px;
+}
+
+.portfolioContainer {
+    color: white;
+}
+
+.portfolioImages {
+    height: 248px;
+    width: 248px;
+    padding-top: 20px;
+    padding-left: 20px;
 
 }
-/* firstResultsRow */
 
-/* HAMBURGER MENU */
-#toggleHamburgerItems {
-	width: 1120px;
-	overflow: none;
-	border-radius: 20px;
+.portfolioLinksContainer {
+    border-top: 1px solid orange;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+
 }
+
+.portfolioLinksContainer a {
+    padding: 10px;
+    background-color: #666666;
+    border: 1px solid orange;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.contactContainer {
+    text-align: center;
+
+}
+
+.contactContainer .columns {
+    width: 364px;
+}
+
+.footerContainer {
+    border-top: 1px solid grey;
+    text-align: center;
+
+}
+
+.footerContainer .columns {
+    border: none;
+}
+
+.footerContainer h1 {
+    color: grey;
+    border: none;
+}
+
+.footerContainer p {
+    color: grey;
+}
+
+.credits {
+    text-align: center;
+    font-style: italic;
+}
+
 
 /* MEDIA QUERIES */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	/* page width */
-	section {
-	}
+    /* page width */
+    section {
+        width: 1200px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up to 1199px) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	/* page width */
-	section {
-		width: 962px;
-	}
-	header {
-  		height: 800px;
-	}
-	/* columns */
-	.columns {
-		width: 290px;
-		overflow: none;
-	}
-	/* HAMBURGER MENU */
-	#toggleHamburgerItems {
-		width: 926px;
-	}
+    /* page width */
+    section {
+        width: 962px;
+    }
+
+    header {
+        height: 800px;
+    }
+
+    /* columns */
+    .columns {
+        width: 290px;
+        overflow: auto;
+    }
+
+    /* HAMBURGER MENU */
+    #toggleHamburgerItems {
+        width: 828px;
+    }
+
+    #toggleHamburgerItems li {
+        width: 242px;
+    }
+
+    /* about */
+    .aboutContainer {
+    }
+
+    .aboutTextBox {
+        width: 580px;
+    }
+
+    .portfolioImages {
+
+    }
+
+    .contactContainer .columns {
+        width: 290px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up to 991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	/* page width */
-	section {
-		width: 755px;
-	}
-	/* columns */
-	.columns {
-		width: 342px;
-		overflow: none;
-	}
-	/* HAMBURGER MENU */
-	#toggleHamburgerItems {
-		width: 720px;
-	}
+    /* page width */
+    section {
+        width: 755px;
+    }
+
+    /* columns */
+    .columns {
+        width: 342px;
+    }
+
+    /* HAMBURGER MENU */
+    #toggleHamburgerItems {
+        margin: 0;
+        padding: 0px;
+        width: 670px;
+        height: 180px;
+    }
+
+    #toggleHamburgerItems li {
+        margin-top: 20px;
+        width: 670px;
+        text-align: center;
+    }
+
+    /* about */
+    .aboutContainer {
+    }
+
+    .aboutTextBox {
+        width: 380px;
+    }
+
+    .portfolioImages {
+        height: 320px;
+        width: 320px;
+
+    }
+
+    .contactContainer .columns {
+        width: 220px;
+    }
+
+    .contactContainer p {
+        font-size: 0.8em;
+
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 601px and up to 767px) */
 @media only screen and (min-width: 601px) and (max-width: 767px) {
-	/* page width */
-	section {
-		width: 601px;
-	}
-	
-	/* columns */
-	.columns {
-		width: 550px;
-		overflow: none;
-	}
-	/* HAMBURGER MENU */
-	#toggleHamburgerItems {
-		width: 570px;
-	}
+    html {
+        /*font-size: 1.8em;*/
+    }
+
+    /* page width */
+    section {
+        width: 580px;
+    }
+
+    #toggleHamburgerItems li {
+        float: left;
+        margin-left: 190px;
+        padding-bottom: 10px;
+    }
+
+    /* columns */
+    .columns {
+        width: 532px;
+        overflow: auto;
+    }
+
+    /* HAMBURGER MENU */
+    #toggleHamburgerItems {
+        margin: 0;
+        padding: 0;
+        width: 494px;
+        height: 180px;
+    }
+
+    #toggleHamburgerItems li {
+        margin-top: 20px;
+        margin-left: 0px;
+        padding: 0px;
+        width: 492px;
+        text-align: center;
+    }
+
+    /* about */
+    .aboutContainer {
+        border: 1px solid grey;
+        overflow: auto;
+    }
+
+    .aboutTextBox {
+        float: none;
+        width: 100%;
+    }
+
+    .aboutMugShotBox {
+        height: 310px;
+        width: 310px;
+        float: none;
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+
+    .portfolioImages {
+        height: 510px;
+        width: 510px;
+    }
+
+    .contactContainer .columns {
+        width: 536px;
+    }
+
+    .contactContainer p {
+    }
 }
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	/* page width */
-	section {
-		width: 386px;
-	}
-	
-	/* columns */
-	.columns {
-		width: 328px;
-		overflow: none;
-	}
-	/* HAMBURGER MENU */
-	#toggleHamburgerItems {
-		width: 318px;
-	}
+    /* page width */
+    section {
+        width: 386px;
+    }
+
+    /* columns */
+    .columns {
+        width: 336px;
+        overflow: auto;
+    }
+
+    /* HAMBURGER MENU */
+    #toggleHamburgerItems {
+        margin: 0px;
+        padding: 0px;
+        width: 302px;
+        height: 180px;
+    }
+
+
+    #toggleHamburgerItems li {
+        margin-top: 20px;
+        margin-left: 0px;
+        padding: 0px;
+        width: 302px;
+        text-align: center;
+    }
+
+    /* about */
+    .aboutContainer {
+        border: 1px solid grey;
+        overflow: auto;
+    }
+
+    .aboutTextBox {
+        float: none;
+        width: 100%;
+    }
+
+    .aboutMugShotBox {
+        height: 290px;
+        width: 290px;
+        float: none;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    /* portfolio */
+    .portfolioImages {
+        height: 314px;
+        width: 314px;
+    }
+
+    .contactContainer .columns {
+        width: 336px;
+    }
+
+    .contactContainer p {
+        font-size: 0.8em;
+    }
 }
- 
 
 
 /* ================================= */
@@ -785,127 +566,153 @@ footer .innerSection {
     position: absolute;
     top: 300px;
     width: 100%;
-	text-align: center;
-	font-size: 1em;
+    text-align: center;
+    font-size: 1em;
 }
+
 .screenSizeReporterInnards {
-	width: 200px;
-	margin: 0 auto;
-	color: white;
-	background-color: black;
-	padding: 10px;
-	
+    width: 200px;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    padding: 10px;
+
 }
+
 .extraLarge {
-	display: inline;
+    display: inline;
 }
+
 .large {
-	display: none;
+    display: none;
 }
+
 .medium {
-	display: none;
+    display: none;
 }
+
 .small {
-	display: none;
+    display: none;
 }
+
 .extraSmall {
-	display: none;
+    display: none;
 }
 
 /* MEDIA QUERIES */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-	/**/
-	.extraLarge {
-		display: inline;
-	}
-	.large {
-		display: none;
-	}
-	.medium {
-	display: none;
-	}
-	.small {
-		display: none;
-	}
-	.extraSmall {
-		display: none;
-	}
+    /**/
+    .extraLarge {
+        display: inline;
+    }
+
+    .large {
+        display: none;
+    }
+
+    .medium {
+        display: none;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .extraSmall {
+        display: none;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up to 1199px) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.extraLarge {
-		display: none;
-	}
-	.large {
-		display: inline;
-	}
-	.medium {
-	display: none;
-	}
-	.small {
-		display: none;
-	}
-	.extraSmall {
-		display: none;
-	}
+    .extraLarge {
+        display: none;
+    }
+
+    .large {
+        display: inline;
+    }
+
+    .medium {
+        display: none;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .extraSmall {
+        display: none;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up to 991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.extraLarge {
-		display: none;
-	}
-	.large {
-		display: none;
-	}
-	.medium {
-	display: inline;
-	}
-	.small {
-		display: none;
-	}
-	.extraSmall {
-		display: none;
-	}	
+    .extraLarge {
+        display: none;
+    }
+
+    .large {
+        display: none;
+    }
+
+    .medium {
+        display: inline;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .extraSmall {
+        display: none;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 601px and up to 767px) */
 @media only screen and (min-width: 601px) and (max-width: 767px) {
-	.extraLarge {
-		display: none;
-	}
-	.large {
-		display: none;
-	}
-	.medium {
-	display: none;
-	}
-	.small {
-		display: inline;
-	}
-	.extraSmall {
-		display: none;
-	}
+    .extraLarge {
+        display: none;
+    }
+
+    .large {
+        display: none;
+    }
+
+    .medium {
+        display: none;
+    }
+
+    .small {
+        display: inline;
+    }
+
+    .extraSmall {
+        display: none;
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	.extraLarge {
-		display: none;
-	}
-	.large {
-		display: none;
-	}
-	.medium {
-	display: none;
-	}
-	.small {
-		display: none;
-	}
-	.extraSmall {
-		display: inline;
-	}
+    .extraLarge {
+        display: none;
+    }
+
+    .large {
+        display: none;
+    }
+
+    .medium {
+        display: none;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .extraSmall {
+        display: inline;
+    }
 }

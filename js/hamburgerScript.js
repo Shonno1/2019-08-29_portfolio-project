@@ -5,10 +5,10 @@ function toggleHamburger (x) {
 }
 
 function toggleHamburgerItems () {
-  var x = document.getElementById("toggleHamburgerItems");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  var y = document.getElementById("toggleHamburgerItems");
+  if (y.style.display === "block") {
+    y.style.display = "none";
   } else {
-    x.style.display = "block";
+    y.style.display = "block";
   }
 }
